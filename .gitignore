@@ -11,6 +11,11 @@
 # production
 /build
 
+#media
+/src/img
+/public/3d
+/public/robots.txt
+
 # misc
 .DS_Store
 .env.local

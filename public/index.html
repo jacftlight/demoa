@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="atom la vie"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,10 +24,33 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Atom La Vie</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBqfxJ8RLOdp6WcRMAQOBHOS1woSno4LMM",
+      authDomain: "atomlavie-ea849.firebaseapp.com",
+      databaseURL: "https://atomlavie-ea849.firebaseio.com",
+      projectId: "atomlavie-ea849",
+      storageBucket: "atomlavie-ea849.appspot.com",
+      messagingSenderId: "631812835816",
+      appId: "1:631812835816:web:ceaf7ac101ac0a65acfc5d",
+      measurementId: "G-VX1SD7HZVT"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

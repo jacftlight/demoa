@@ -1,0 +1,61 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home canvas {
+    background-color: snow;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.homeTitle {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    font-size: 5em;
+    color: hotpink;
+    z-index: 11;
+    pointer-events: none;
+    font-family: "Segoe Script", monospace;
+}
+
+.subTitle {
+    position: absolute;
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+    color: gold;
+    z-index: 1200;
+    top: 10px;
+    pointer-events: auto;
+    font-family: "Comic Sans MS", "Sitka Heading", serif;
+}
+
+.subTitle:hover {
+    cursor: pointer;
+}
+
+.downArrow {
+    position: absolute;
+    margin: 5px;
+    padding: 0px;
+    z-index: 11;
+    bottom: 30px;
+    opacity: 0.5;
+}
+
+.downArrow:hover {
+    opacity: 1;
+    cursor: pointer;
+}
